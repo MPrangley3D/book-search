@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 2.6.1p33
 
-Things you may want to cover:
+* Rails version 5.2.2.1
 
-* Ruby version
+* Gem version 3.0.1
 
-* System dependencies
+* Dev Environment: Windows
 
-* Configuration
+* Services: Utilizes Google Books API
 
-* Database creation
+* Deploy to Heroku
 
-* Database initialization
 
-* How to run the test suite
+# DESIGN INFORMATION
 
-* Services (job queues, cache servers, search engines, etc.)
+This application will allows you to use the Google Books API to search for books, deployed via Heroku
 
-* Deployment instructions
-
-* ...
+Application specifications:
+* User may type in a query and app will display a list of books matching that query.
+* Each item in the list will include: Author, Title, and Publishing Company, and a picture of the book.
+* From each list item, user can also be able to navigate to more information about the book
+ * Wikipedia or Amazon
+ * Potentially embedded?
