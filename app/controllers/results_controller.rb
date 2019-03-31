@@ -1,5 +1,7 @@
 class ResultsController < ApplicationController
   def index
-    @result = Result.search(params[:search])
+    if params[:search]
+      @results = GoogleBooks.search(params[:search])
+    end
   end
 end
