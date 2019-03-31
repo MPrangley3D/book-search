@@ -1,16 +1,11 @@
 <h1>Google Books Search</h1>
 
-<%= form_tag(results_path, method: :get) do %>
-<%= text_field_tag :search, @search, placeholder: "Search..." %>
-<%= submit_tag ("Search") %>
-
-<% end %>
-<br>
-<%= form_for @result do |f| %>
+<%= form_for @results do |f| %>
     <%= f.label :title %><br>
     <br>
     <%= f.label :author %><br>
     <br>
     <%= f.label :company %><br>
     <br>
+    <%= f.submit %>
 <% end %>
